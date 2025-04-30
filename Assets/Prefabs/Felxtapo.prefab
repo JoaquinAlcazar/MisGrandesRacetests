@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  partidasJugadas: 0
+  victorias: 0
+  derrotas: 0
 --- !u!60 &6183947219198958093
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -197,7 +200,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 70c7b4eee3213db4aa821607e9906950, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

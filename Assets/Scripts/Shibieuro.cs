@@ -6,17 +6,20 @@ public class Shibieuro : MonoBehaviour
 {
     AudioSource audioSource;
     Camera mainCamera;
+    AudioSource music;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         mainCamera = Camera.main;
+        music = GameObject.Find("Music").GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         StartCoroutine(PlaySoundAndPause());
         StartCoroutine(MoveAndZoomCamera());
+        music.Pause();
     }
 
     IEnumerator PlaySoundAndPause()
