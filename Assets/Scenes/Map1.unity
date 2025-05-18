@@ -473,11 +473,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1296957634777349870, guid: 24eb32ac5f085ec47a73f27692d552e5, type: 3}
   m_PrefabInstance: {fileID: 712809536}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &957515938 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5433060127313788341, guid: f00e6dbfc5a5aad4da06d86490044bbe, type: 3}
-  m_PrefabInstance: {fileID: 1374933138}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1199809583
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,11 +803,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1296957634777349870, guid: f00e6dbfc5a5aad4da06d86490044bbe, type: 3}
   m_PrefabInstance: {fileID: 1374933138}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1488125353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5433060127313788341, guid: 24eb32ac5f085ec47a73f27692d552e5, type: 3}
-  m_PrefabInstance: {fileID: 712809536}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1637135331
 PrefabInstance:
@@ -1531,10 +1521,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charactersToSpawn:
-  - {fileID: 957515938}
-  - {fileID: 5433060127313788341, guid: 5520dec4e56dabc4799cc0c84518a57c, type: 3}
   - {fileID: 5433060127313788341, guid: ef1c69442c8edab40bc7f1b7a8cafc7a, type: 3}
-  - {fileID: 1488125353}
+  - {fileID: 5433060127313788341, guid: 11b6d053e93c7974f9410864231e1454, type: 3}
+  - {fileID: 5433060127313788341, guid: 630e31a8100f1ee4ba729e0953f14bad, type: 3}
+  - {fileID: 5433060127313788341, guid: 24eb32ac5f085ec47a73f27692d552e5, type: 3}
+  - {fileID: 5433060127313788341, guid: 5ab9e332f67767d44861c857dbe998a4, type: 3}
+  - {fileID: 5433060127313788341, guid: affef12e56cc9d1428f8ffba7414a8e7, type: 3}
+  - {fileID: 5433060127313788341, guid: 6a2ad087aed0d624785828860412b25d, type: 3}
+  - {fileID: 5433060127313788341, guid: 00ee442e7e356a04a800aaa293a32f83, type: 3}
+  - {fileID: 5433060127313788341, guid: 8ed69a7db53b65c4dbebc42d8db628f0, type: 3}
+  - {fileID: 5433060127313788341, guid: f00e6dbfc5a5aad4da06d86490044bbe, type: 3}
+  - {fileID: 5433060127313788341, guid: 3a31679761ae2404ca3ec50064f51643, type: 3}
+  - {fileID: 5433060127313788341, guid: 5520dec4e56dabc4799cc0c84518a57c, type: 3}
   spawnRadius: 2
 --- !u!4 &2049949797
 Transform:
