@@ -43,11 +43,12 @@ public class HorseBehaviour : MonoBehaviour
     private Rigidbody2D rb;
     private AudioSource audioSource;
 
-    // Estadísticas del personaje
+    // Estadï¿½sticas del personaje
     public int partidasJugadas;
     public int victorias;
     public int derrotas;
     private string characterID;
+    public string CharacterID => characterID;
 
     private string jsonPath;
 
@@ -69,14 +70,14 @@ public class HorseBehaviour : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró el TextMeshPro en el hijo 'abreviation' de " + gameObject.name);
+            Debug.LogWarning("No se encontrï¿½ el TextMeshPro en el hijo 'abreviation' de " + gameObject.name);
         }
     }
 
 
     void FixedUpdate()
     {
-        rb.velocity = moveDirection * speed;
+        rb.linearVelocity = moveDirection * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

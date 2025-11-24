@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8514736336703254704}
   m_Layer: 0
   m_Name: Template
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,6 +202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  partidasJugadas: 0
+  victorias: 0
+  derrotas: 0
 --- !u!50 &5901060463022506436
 Rigidbody2D:
   serializedVersion: 4

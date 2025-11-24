@@ -20,34 +20,38 @@ public class Shibieuro : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (triggered) return;
-        triggered = true;
+        if (other.tag != "Enemy") {
+            if (triggered) return;
+            triggered = true;
 
-        HorseBehaviour winner = other.GetComponent<HorseBehaviour>();
-        if (winner != null)
-        {
-            // Aumentar estadísticas del ganador
-            winner.victorias++;
-            winner.partidasJugadas++;
-            winner.SaveStats();
-            DontDestroyOnLoad(winner.gameObject);
-
-            // Aumentar derrotas a los demás
-            HorseBehaviour[] allHorses = FindObjectsOfType<HorseBehaviour>();
-            foreach (HorseBehaviour horse in allHorses)
+            HorseBehaviour winner = other.GetComponent<HorseBehaviour>();
+            if (winner != null)
             {
-                if (horse != winner)
-                {
-                    horse.derrotas++;
-                    horse.partidasJugadas++;
-                    horse.SaveStats();
-                }
-            }
+                // Aumentar estadísticas del ganador
+                winner.victorias++;
+                winner.partidasJugadas++;
+                winner.SaveStats();
+                DontDestroyOnLoad(winner.gameObject);
 
-            StartCoroutine(PlaySoundAndPause());
-            StartCoroutine(MoveAndZoomCamera(winner.transform));
-            music.Pause();
+                // Aumentar derrotas a los demás
+                HorseBehaviour[] allHorses = FindObjectsOfType<HorseBehaviour>();
+                foreach (HorseBehaviour horse in allHorses)
+                {
+                    if (horse != winner)
+                    {
+                        horse.derrotas++;
+                        horse.partidasJugadas++;
+                        horse.SaveStats();
+                    }
+                }
+
+                StartCoroutine(PlaySoundAndPause());
+                StartCoroutine(MoveAndZoomCamera(winner.transform));
+                music.Pause();
+            }
         }
+
+        
     }
 
     IEnumerator PlaySoundAndPause()
