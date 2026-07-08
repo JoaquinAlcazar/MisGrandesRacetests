@@ -31,6 +31,7 @@ The loop goes as it follows:
 If you want to see some footage, you can refer [here](https://x.com/MaybeItsKimine/status/1927695110289920003?s=20)
 
 Game backgrounds, music, sound effects, and "Lei Heng" belong to Project Moon (specifically Limbus Company)  
+Character sprites belong to ShibiDayo
   
 # Fun Facts  
 The map Purgatorio1 will only spawn the character Shining Binnacle
